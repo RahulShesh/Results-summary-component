@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight:800 ;
+    position: relative;
+
+}
+.container{
+   position: absolute;
+   top: 150px;
+   right: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:1px 1px 5px;
+    width: fit-content;
+}
+.main{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));    
+    height: 50vh;
+    width: 230px;
+    border-radius: 20px;
+    color:  hsl(241, 100%, 89%)
+}
+.num{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ss,h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: ;
+}
+.summary{
+    height: 45vh;
+    width: 230px;
+}
+.reaction, .Memory, .Verbal, .Visual, .f1{
+    display: flex;
+    justify-content: space-between;
+
+}
