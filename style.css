@@ -1,57 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-size: 18px;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight:800 ;
-    position: relative;
+body {
+  font-family: Hanken Grotesk;
+  font-weight: bold;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 600px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  display: flex;
+  box-shadow: 50px 50px 50px rgba(47, 0, 255, 0.075);
+  border-radius: 20px;
+}
 
+.your_result {
+  padding-top: 40px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.container{
-   position: absolute;
-   top: 150px;
-   right: 350px;
+.your_result h1 {
+  color: white;
+}
+.your_result p {
+  color: hsl(241, 100%, 89%);
+}
+.non {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.non h1 {
+  color: white;
+  font-size: 60px;
+}
+.r_P {
+  width: 200px;
+}
+.summary {
+  padding: 40px;
+}
+.sum {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+  font-weight: bold;
+}
+#summary_option {
+  margin: 30px 0px;
+}
+.option_container {
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+.item_score {
+  margin-right: 10px;
+  position: absolute;
+  width: 50px;
+  display: flex;
+  right: 0px;
+  color: hsl(224, 30%, 27%);
+}
+.item_score p {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+}
+.row_1 {
+  display: flex;
+}
+.row_2 {
+  width: 150px;
+  height: 30px;
+}
+button {
+  width: 250px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(241, 81%, 54%);
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: hsl(224, 30%, 27%);
+}
+
+@media screen and (max-width: 375px) {
+  .attribution {
+    left: 60px;
+  }
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow:1px 1px 5px;
-    width: fit-content;
-}
-.main{
+    flex-direction: column;
+    top: 0vh;
+    left: 0vw;
+    width: 375px;
+  }
+  .your_result {
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));    
-    height: 50vh;
-    width: 230px;
-    border-radius: 20px;
-    color:  hsl(241, 100%, 89%)
-}
-.num{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 375px;
+    border-radius:0px 0px 20px 20px;
+  }
+  
+.your_result h1 {
+    color: white;
+  }
+ 
+  .non {
+    height: 125px;
+    width: 125px;
     border-radius: 50%;
-    background-image: linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.ss,h1{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: ;
-}
-.summary{
-    height: 45vh;
-    width: 230px;
-}
-.reaction, .Memory, .Verbal, .Visual, .f1{
-    display: flex;
-    justify-content: space-between;
+    margin: 10px 0px;
+  }
+  .non h1 {
+    font-size: 30px;
+  }
+  .r_P {
+    width: 250px;
+    font-size: 15px;
+  }
+  .summary {
+    padding: 20px 20px;
+  }
+  .sum {
+    font-size: 20px;
+  }
+  #summary_option {
+    margin: 20px 0px;
+  }
+  .option_container {
+    width: 340px;
+    height: 45px;
+    margin: 10px 0px;
+  }
 
+ 
+  .row_2 {
+    width: 150px;
+    height: 30px;
+  }
+  button {
+    width: 340px;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
 }
