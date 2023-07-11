@@ -37,6 +37,7 @@ data.forEach(item => {
   const iconCell = document.createElement('div');
   const iconImg = document.createElement('img');
   iconImg.src = item.icon;
+  iconImg.alt = "icons"
   iconCell.appendChild(iconImg);
 
   const categoryCell = document.createElement('div');
